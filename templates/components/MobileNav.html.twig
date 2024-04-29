@@ -1,0 +1,67 @@
+<div id="nav-mobile" class="nav-mobile navy">
+	<div class="sub-head">
+		<div class="container d-flex justify-content-between align-items-center">
+			<div id="nav-icon4" class="">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="logo">
+				<a href="/">
+					<img src="#" alt="{{title}}" class="logo-without-sticky"/>
+					<img src="#" alt="{{title}}" class="logo-with-sticky d-none"/>
+				</a>
+			</div>
+			<div class="nav" style="left: -100%;">
+				<div class="logo">
+					<a href="/">
+						<img src="//images/logos/red_Logo.png" alt="{{title}}"/>
+					</a>
+				</div>
+				<nav>
+					<ul
+						class="list-nav">
+						{# <!-- <li class="link active">
+																																										              <a
+																																										                href="javascript:void(0)"
+																																										                data-bs-toggle="modal"
+																																										                data-bs-target="#authenticationModal"
+																																										              >
+																																										                <i class="fa-regular fa-user"></i>
+																																										                Login
+																																										              </a>
+																																										            </li> --> #}
+						{% for item in this.categories %}
+							<li class="link close-menu-clicked">
+								<a href="#">{{item['name']}}</a>
+							</li>
+						{% endfor %}
+						<li class="link">
+							<a href="/contact-us">CONTACT US</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="profile-cart d-flex align-items-center">
+				<div class="profile-cart-content">
+					<div class="cart">
+						<div class="content d-flex align-items-center">
+							<span>
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="none" class="logo-without-sticky" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18.3165 7.625H5.68533C5.53152 7.625 5.38311 7.68172 5.2685 7.7843C5.1539 7.88687 5.08114 8.02811 5.06415 8.18098L3.95304 18.181C3.94333 18.2683 3.95216 18.3568 3.97895 18.4405C4.00574 18.5242 4.04989 18.6013 4.10851 18.6668C4.16714 18.7323 4.23891 18.7847 4.31916 18.8206C4.39941 18.8565 4.48632 18.875 4.57422 18.875H19.4276C19.5155 18.875 19.6024 18.8565 19.6827 18.8206C19.7629 18.7847 19.8347 18.7323 19.8933 18.6668C19.952 18.6013 19.9961 18.5242 20.0229 18.4405C20.0497 18.3568 20.0585 18.2683 20.0488 18.181L18.9377 8.18098C18.9207 8.02811 18.848 7.88687 18.7334 7.7843C18.6187 7.68172 18.4703 7.625 18.3165 7.625Z" stroke="#D82D28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M8.875 6.7915C8.875 5.9627 9.20424 5.16785 9.79029 4.5818C10.3763 3.99574 11.1712 3.6665 12 3.6665C12.8288 3.6665 13.6237 3.99574 14.2097 4.5818C14.7958 5.16785 15.125 5.9627 15.125 6.7915" stroke="#D82D28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="none" class="logo-with-sticky d-none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18.3155 7.625H5.68435C5.53054 7.625 5.38214 7.68172 5.26753 7.7843C5.15292 7.88687 5.08016 8.02811 5.06318 8.18098L3.95206 18.181C3.94236 18.2683 3.95119 18.3568 3.97798 18.4405C4.00477 18.5242 4.04892 18.6013 4.10754 18.6668C4.16616 18.7323 4.23794 18.7847 4.31818 18.8206C4.39843 18.8565 4.48534 18.875 4.57324 18.875H19.4267C19.5146 18.875 19.6015 18.8565 19.6817 18.8206C19.762 18.7847 19.8337 18.7323 19.8924 18.6668C19.951 18.6013 19.9951 18.5242 20.0219 18.4405C20.0487 18.3568 20.0575 18.2683 20.0478 18.181L18.9367 8.18098C18.9197 8.02811 18.847 7.88687 18.7324 7.7843C18.6178 7.68172 18.4694 7.625 18.3155 7.625Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M8.875 6.7915C8.875 5.9627 9.20424 5.16785 9.79029 4.5818C10.3763 3.99574 11.1712 3.6665 12 3.6665C12.8288 3.6665 13.6237 3.99574 14.2097 4.5818C14.7958 5.16785 15.125 5.9627 15.125 6.7915" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+							|
+							<span class="crt-count">0</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

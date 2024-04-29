@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[671],{671:(s,e,a)=>{a.r(e),a.d(e,{default:()=>t});var c=a(809);const t=class extends c.xI{}}}]);
